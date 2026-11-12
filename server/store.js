@@ -1,12 +1,13 @@
 import fs from 'node:fs';
+import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-export const DATA_DIR = path.join(__dirname, 'data');
-export const DB_PATH = path.join(DATA_DIR, 'db.json');
+export const DATA_DIR = process.env.VERCEL ? os.tmpdir() : path.join(__dirname, 'data');
+export const DB_PATH = path.join(DATA_DIR, 'grill-restaurant-db.json');
 
 export const CATEGORIES = [
   'All',
