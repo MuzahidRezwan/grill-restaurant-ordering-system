@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="plateGrad" cx="45%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="75%" stop-color="#FAFAFA"/>
+      <stop offset="100%" stop-color="#E5E7EB"/>
+    </radialGradient>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+  <circle cx="100" cy="100" r="90" fill="url(#plateGrad)" stroke="#E5E7EB" stroke-width="2" filter="url(#shadow)"/>
+  <circle cx="100" cy="100" r="76" fill="none" stroke="#F1F5F9" stroke-width="1.5"/>
+  
+    <circle cx="100" cy="100" r="68" fill="#1F2937"/>
+    <circle cx="100" cy="100" r="58" fill="#B45309"/>
+    <path d="M62 110 Q85 95 108 112 T140 108" fill="none" stroke="#FDE047" stroke-width="5" stroke-linecap="round"/>
+    <path d="M64 122 Q88 106 112 122 T138 118" fill="none" stroke="#FEF08A" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="78" cy="80" r="14" fill="#FFFFFF"/><circle cx="78" cy="80" r="7" fill="#F59E0B"/>
+    <ellipse cx="122" cy="82" rx="16" ry="11" fill="#FCA5A5" stroke="#991B1B" stroke-width="2"/>
+    <rect x="92" y="54" width="18" height="22" rx="2" fill="#064E3B"/>
+    <circle cx="102" cy="96" r="4" fill="#22C55E"/>
+  
+</svg>
