@@ -290,11 +290,11 @@ export default function FoodMenuSection({
 
                 {/* Circular Food Image */}
                 <div className="flex justify-center mt-1 mb-3">
-                  <div className="relative w-28 h-28 rounded-full bg-neutral-50 flex items-center justify-center p-1">
+                  <div className="relative w-28 h-28 rounded-full bg-neutral-100 overflow-hidden shadow-sm border border-neutral-100">
                     <img
                       src={item.image}
                       alt={item.name}
-                      className="w-full h-full object-contain rounded-full"
+                      className="w-full h-full object-cover"
                     />
                     {unavailable && (
                       <span className="absolute inset-0 bg-white/80 rounded-full flex items-center justify-center text-[11px] font-bold text-rose-600">

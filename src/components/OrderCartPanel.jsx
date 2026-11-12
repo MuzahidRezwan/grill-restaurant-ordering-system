@@ -194,7 +194,7 @@ export default function OrderCartPanel({
               <img
                 src={item.image}
                 alt={item.name}
-                className="w-12 h-12 rounded-full object-contain bg-neutral-50 shrink-0"
+                className="w-12 h-12 rounded-full object-cover bg-neutral-100 shrink-0"
               />
               <div className="flex-1 min-w-0">
                 <div className="flex items-start justify-between gap-2">

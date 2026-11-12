@@ -184,7 +184,7 @@ export default function App() {
       name: i.name,
       size: i.size || 'Regular',
       price: i.price,
-      image: i.image || '/dishes/onion-pizza.svg',
+      image: i.image || '/dishes/onion-pizza.jpg',
       category: i.category || 'Menu',
       quantity: i.quantity || 1,
     }));

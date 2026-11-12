@@ -16,22 +16,22 @@ import { CATEGORIES, ORDER_STATUSES, formatCurrency, api } from '../api';
 import { statusBadgeClass } from './OrderTrackingView';
 
 const DISH_IMAGES = [
-  { label: 'Onion Pizza', value: '/dishes/onion-pizza.svg' },
-  { label: 'Pepperoni Pizza', value: '/dishes/pepperoni-pizza.svg' },
-  { label: 'Mix Veg', value: '/dishes/mix-veg.svg' },
-  { label: 'Noodle Soup', value: '/dishes/noodle-soup.svg' },
-  { label: 'Salad', value: '/dishes/salad.svg' },
-  { label: 'Makai Shorba', value: '/dishes/makai-shorba.svg' },
-  { label: 'Egg Corn', value: '/dishes/egg-corn.svg' },
-  { label: 'Burger', value: '/dishes/burger.svg' },
-  { label: 'Grilled Salmon', value: '/dishes/salmon.svg' },
-  { label: 'Spicy Prawns', value: '/dishes/prawns.svg' },
-  { label: 'Salmon Sushi', value: '/dishes/sushi.svg' },
-  { label: 'Dragon Roll', value: '/dishes/dragon-roll.svg' },
-  { label: 'Miso Ramen', value: '/dishes/ramen.svg' },
-  { label: 'Spicy Ramen', value: '/dishes/spicy-ramen.svg' },
-  { label: 'Lava Cake', value: '/dishes/lava-cake.svg' },
-  { label: 'Cheesecake', value: '/dishes/cheesecake.svg' },
+  { label: 'Onion Pizza', value: '/dishes/onion-pizza.jpg' },
+  { label: 'Pepperoni Pizza', value: '/dishes/pepperoni-pizza.jpg' },
+  { label: 'Mix Veg', value: '/dishes/mix-veg.jpg' },
+  { label: 'Noodle Soup', value: '/dishes/noodle-soup.jpg' },
+  { label: 'Salad', value: '/dishes/salad.jpg' },
+  { label: 'Makai Shorba', value: '/dishes/makai-shorba.jpg' },
+  { label: 'Egg Corn', value: '/dishes/egg-corn.jpg' },
+  { label: 'Burger', value: '/dishes/burger.jpg' },
+  { label: 'Grilled Salmon', value: '/dishes/salmon.jpg' },
+  { label: 'Spicy Prawns', value: '/dishes/prawns.jpg' },
+  { label: 'Salmon Sushi', value: '/dishes/sushi.jpg' },
+  { label: 'Dragon Roll', value: '/dishes/dragon-roll.jpg' },
+  { label: 'Miso Ramen', value: '/dishes/ramen.jpg' },
+  { label: 'Spicy Ramen', value: '/dishes/spicy-ramen.jpg' },
+  { label: 'Lava Cake', value: '/dishes/lava-cake.jpg' },
+  { label: 'Cheesecake', value: '/dishes/cheesecake.jpg' },
 ];
 
 const EMPTY_FOOD_FORM = {
@@ -42,7 +42,7 @@ const EMPTY_FOOD_FORM = {
   rating: '4.9',
   prepMinutes: '12',
   description: '',
-  image: '/dishes/onion-pizza.svg',
+  image: '/dishes/onion-pizza.jpg',
   available: true,
   popular: false,
 };
@@ -106,7 +106,7 @@ export default function AdminPortalView({
       rating: String(item.rating || 4.8),
       prepMinutes: String(item.prepMinutes || 12),
       description: item.description || '',
-      image: item.image || '/dishes/onion-pizza.svg',
+      image: item.image || '/dishes/onion-pizza.jpg',
       available: item.available !== false,
       popular: Boolean(item.popular),
     });
@@ -400,7 +400,7 @@ export default function AdminPortalView({
                           <img
                             src={item.image}
                             alt={item.name}
-                            className="w-9 h-9 rounded-full bg-neutral-100 object-contain"
+                            className="w-9 h-9 rounded-full bg-neutral-100 object-cover"
                           />
                           <div>
                             <p className="font-bold text-neutral-900">{item.name}</p>

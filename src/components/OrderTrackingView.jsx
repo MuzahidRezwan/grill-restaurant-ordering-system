@@ -322,9 +322,9 @@ export default function OrderTrackingView({ orders, selectedOrderId, onSelectOrd
                       <div key={idx} className="flex items-center justify-between px-4 py-2.5 bg-white">
                         <div className="flex items-center gap-3">
                           <img
-                            src={item.image || '/dishes/onion-pizza.svg'}
+                            src={item.image || '/dishes/onion-pizza.jpg'}
                             alt={item.name}
-                            className="w-9 h-9 rounded-full bg-neutral-50 object-contain"
+                            className="w-9 h-9 rounded-full bg-neutral-100 object-cover"
                           />
                           <div>
                             <p className="text-xs font-bold text-neutral-900">{item.name}</p>
